@@ -49,7 +49,7 @@ class Data {
   String email;
   dynamic emailVerifiedAt;
   dynamic twoFactorConfirmedAt;
-  int type;
+  String type;
   dynamic currentTeamId;
   dynamic profilePhotoPath;
   DateTime createdAt;

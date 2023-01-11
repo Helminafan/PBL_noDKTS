@@ -46,7 +46,7 @@ class _loginState extends State<login> {
         loginResponseModel =
             LoginResponseModel.fromJson(json.decode(response.body));
         saveUser(loginResponseModel.data.token, loginResponseModel.data.name);
-        //
+        print(response.body);
       } else {
         Alert(
                 context: context,
@@ -60,7 +60,7 @@ class _loginState extends State<login> {
       print(e.toString());
     }
   }
-S
+
   Future saveUser(token, name) async {
     final SharedPreferences pref = await _prefs;
     pref.setString("name", name);
